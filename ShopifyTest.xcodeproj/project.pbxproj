@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		21EECF922154E2580068AEF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EECF912154E2580068AEF3 /* AppDelegate.swift */; };
-		21EECF942154E2580068AEF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EECF932154E2580068AEF3 /* ViewController.swift */; };
 		21EECF972154E2580068AEF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21EECF952154E2580068AEF3 /* Main.storyboard */; };
 		21EECF992154E25B0068AEF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21EECF982154E25B0068AEF3 /* Assets.xcassets */; };
 		21EECF9C2154E25B0068AEF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21EECF9A2154E25B0068AEF3 /* LaunchScreen.storyboard */; };
+		21EECFA42154E2B50068AEF3 /* TagTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EECFA32154E2B50068AEF3 /* TagTableViewController.swift */; };
+		21EECFA62154E7150068AEF3 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EECFA52154E7150068AEF3 /* Product.swift */; };
+		21EECFA82154E7740068AEF3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EECFA72154E7740068AEF3 /* NetworkManager.swift */; };
+		21EECFAA2154F8E90068AEF3 /* ProductsListPageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EECFA92154F8E90068AEF3 /* ProductsListPageTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		21EECF8E2154E2580068AEF3 /* ShopifyTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopifyTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21EECF912154E2580068AEF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		21EECF932154E2580068AEF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		21EECF962154E2580068AEF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		21EECF982154E25B0068AEF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21EECF9B2154E25B0068AEF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21EECF9D2154E25B0068AEF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21EECFA32154E2B50068AEF3 /* TagTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagTableViewController.swift; sourceTree = "<group>"; };
+		21EECFA52154E7150068AEF3 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		21EECFA72154E7740068AEF3 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		21EECFA92154F8E90068AEF3 /* ProductsListPageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListPageTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				21EECF912154E2580068AEF3 /* AppDelegate.swift */,
-				21EECF932154E2580068AEF3 /* ViewController.swift */,
+				21EECFA52154E7150068AEF3 /* Product.swift */,
+				21EECFA72154E7740068AEF3 /* NetworkManager.swift */,
 				21EECF952154E2580068AEF3 /* Main.storyboard */,
+				21EECFA32154E2B50068AEF3 /* TagTableViewController.swift */,
+				21EECFA92154F8E90068AEF3 /* ProductsListPageTableViewController.swift */,
 				21EECF982154E25B0068AEF3 /* Assets.xcassets */,
 				21EECF9A2154E25B0068AEF3 /* LaunchScreen.storyboard */,
 				21EECF9D2154E25B0068AEF3 /* Info.plist */,
@@ -135,8 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21EECF942154E2580068AEF3 /* ViewController.swift in Sources */,
+				21EECFAA2154F8E90068AEF3 /* ProductsListPageTableViewController.swift in Sources */,
+				21EECFA82154E7740068AEF3 /* NetworkManager.swift in Sources */,
+				21EECFA42154E2B50068AEF3 /* TagTableViewController.swift in Sources */,
 				21EECF922154E2580068AEF3 /* AppDelegate.swift in Sources */,
+				21EECFA62154E7150068AEF3 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
