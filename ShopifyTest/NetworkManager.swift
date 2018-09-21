@@ -6,7 +6,7 @@
 //  Copyright © 2018 Will Chew. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 enum Constants {
     static let page = "page"
@@ -51,13 +51,16 @@ class NetworkManager {
             
             for item in products {
                 var totalStock = 0
-                guard let stock = item["variants"] as? Array<Dictionary<String,Any?>>  else { return }
+                guard let stock = item["variants"] as? Array<Dictionary<String,Any?>>, let picture = item["image"] as? Dictionary<String, Any?>   else { return }
                 let title = item["title"] as! String
                 let tags = item["tags"] as! String
+                let imageSource = picture["src"] as! String
+
+                let pictureURL = URL(string: imageSource)!
+                let imageData = try? Data(contentsOf: pictureURL)
                 
-//                let words = tags.components(separatedBy: ",")
-//                var tagArray = [String]()
                 
+
                 
                 for inventoryStock in stock {
                    let stockNo = inventoryStock["inventory_quantity"] as! Int
@@ -65,7 +68,7 @@ class NetworkManager {
                     
                 }
                 
-                let newProduct = Product(tags: tags, name: title, stock: totalStock)
+                let newProduct = Product(tags: tags, name: title, stock: totalStock, image: UIImage(data:imageData!)!)
                 productArray.append(newProduct)
                 
             }

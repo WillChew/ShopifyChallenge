@@ -6,16 +6,18 @@
 //  Copyright © 2018 Will Chew. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class Product {
     var tags : String
     var name : String
     var stock : Int
+    var image : UIImage
     
-    init(tags: String, name: String, stock: Int) {
+    init(tags: String, name: String, stock: Int, image: UIImage) {
         self.tags = tags
         self.name = name
         self.stock = stock
+        self.image = image
     }
 }

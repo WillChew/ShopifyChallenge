@@ -25,10 +25,12 @@ class TagTableViewController: UITableViewController {
                 
                 for word in words {
                     if self.tagsArray.contains(word) {
-                        
+
                     } else {
                         self.tagsArray.append(word)
                     }
+                    
+                    
                 }
                 
             }
@@ -130,7 +132,15 @@ class TagTableViewController: UITableViewController {
         let destinationVC = segue.destination as! ProductsListPageTableViewController
         
         if let indexPath = tableView.indexPathForSelectedRow {
-            destinationVC.
+            var newProductList = [Product]()
+            destinationVC.selectedTag = tagsArray[indexPath.row]
+            
+            for product in productsArray {
+                if product.tags.contains(tagsArray[indexPath.row]) {
+                   newProductList.append(product)
+                }
+                destinationVC.productList = newProductList
+            }
         }
     }
 }

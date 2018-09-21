@@ -10,7 +10,8 @@ import UIKit
 
 class ProductsListPageTableViewController: UITableViewController {
     
-    var selectedTag: String
+    var selectedTag: String!
+    var productList: [Product]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,14 +37,16 @@ class ProductsListPageTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10
+        return productList.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "productsList", for: indexPath)
 
-        cell.textLabel?.text = "HI"
+        cell.textLabel?.text = productList[indexPath.row].name
+        cell.detailTextLabel?.text = String(productList[indexPath.row].stock)
+        cell.imageView?.image = productList[indexPath.row].image
 
         return cell
     }
