@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tag Table View Controller-->
+        <!--Tags-->
         <scene sceneID="RZu-ez-eHc">
             <objects>
                 <tableViewController id="nUT-Ts-biT" customClass="TagTableViewController" customModule="ShopifyTest" customModuleProvider="target" sceneMemberID="viewController">
@@ -33,7 +33,7 @@
                             <outlet property="prefetchDataSource" destination="nUT-Ts-biT" id="apS-NO-an1"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="KmI-z0-ecc"/>
+                    <navigationItem key="navigationItem" title="Tags" id="KmI-z0-ecc"/>
                     <connections>
                         <segue destination="LH4-rO-9Y2" kind="show" identifier="goToProductList" id="iYp-HM-m0D"/>
                     </connections>
@@ -81,6 +81,7 @@
                             <outlet property="delegate" destination="LH4-rO-9Y2" id="MTQ-En-hYe"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="Elk-6w-tno"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a7z-Rv-Rji" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

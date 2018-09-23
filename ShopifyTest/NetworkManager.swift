@@ -60,8 +60,6 @@ class NetworkManager {
                 let imageData = try? Data(contentsOf: pictureURL)
                 
                 
-
-                
                 for inventoryStock in stock {
                    let stockNo = inventoryStock["inventory_quantity"] as! Int
                     totalStock += stockNo
